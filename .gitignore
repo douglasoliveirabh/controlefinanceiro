@@ -5,5 +5,5 @@ client/bower_components/*
 client/typings/*
 client/app/*.js
 client/app/*.js.map
-client/app/*/*.js
-client/app/*/*.js.map 
+client/app/**/*.js
+client/app/**/*.js.map 
