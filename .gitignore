@@ -3,3 +3,4 @@ typings/*
 client/node_modules/*
 client/bower_components/*
 client/typings/*
+client/app/*.js
