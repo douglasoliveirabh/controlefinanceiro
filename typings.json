@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "express": "registry:npm/express#4.14.0+20160925001530",
+    "jsonwebtoken": "registry:npm/jsonwebtoken#7.1.8+20160811031426",
+    "mongoose": "registry:npm/mongoose#4.3.5+20160628072220"
+  }
+}
