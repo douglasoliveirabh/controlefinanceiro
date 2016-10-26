@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Http, Headers, Response, RequestOptions } from '@angular/http';
 import { Observable } from 'rxjs';
-import 'rxjs/add/operator/map'
+import 'rxjs/add/operator/map';
+import { Router } from '@angular/router';
 
 @Injectable()
 export class AuthService {
@@ -9,7 +10,7 @@ export class AuthService {
 
     private requestOptions: RequestOptions;
 
-    constructor(private http: Http) {
+    constructor(private http: Http, private router: Router) {
 
         let headers = new Headers({"content-Type":"application/json"});
         this.requestOptions = new RequestOptions({headers : headers});
@@ -42,6 +43,7 @@ export class AuthService {
         // clear token remove user from local storage to log user out
         this.token = null;
         localStorage.removeItem('currentUser');
+        this.router.navigate(['/login']);
     }
 
 }

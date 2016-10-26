@@ -11,6 +11,7 @@ import { routing } from './app.routing';
 //Components
 import { AppComponent }   from './app.component';
 import { LoginComponent }   from './login/login.component';
+import { HomeComponent }   from './home/home.component';
 import {AuthGuard} from './shared/guards/auth.guard';
 
 //Services
@@ -27,7 +28,8 @@ import { AuthService } from './shared/services/auth.service';
     ],
   declarations: [ 
     AppComponent, 
-    LoginComponent
+    LoginComponent,
+    HomeComponent
     /*CustomerListComponent,
     UserListComponent*/
     ],
